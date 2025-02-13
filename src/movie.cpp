@@ -7,7 +7,7 @@
 
 void Movie::PrintMovieData()
 {
-	std::cout << "Movie: " + GetTitle() + "\nDirector: " + GetDirector() + "\nRuntime: " + std::to_string(GetRunTime()) + "\nRatings: " + std::to_string(GetRating()) + "\n";
+	std::cout << "Movie: " + GetTitle() + "\nDirector: " + GetDirector() + "\nRuntime: " + std::to_string(GetRuntime()) + "\nRatings: " + std::to_string(GetRating()) + "\n";
 }
 Movie::Movie(std::string t, std::string d, int r, int i, double rate)
 {
@@ -44,7 +44,7 @@ double Movie::GetRating() // returns rating
 {
 	return rating;
 }
-int Movie::GetRunTime() // returns runtime
+int Movie::GetRuntime() // returns runtime
 {
 	return runtime;
 }

@@ -21,7 +21,7 @@ public:
     std::string GetTitle(); // returns title
     std::string GetDirector(); // returns director
     double GetRating(); // returns rating
-    int GetRunTime(); // returns runtime
+    int GetRuntime(); // returns runtime
 
 };
 

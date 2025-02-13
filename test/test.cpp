@@ -12,7 +12,7 @@ TEST_CASE("Test Movie Constructor and Helper Functions")
 	CHECK(test.GetTitle() == "Title");
 	CHECK(test.GetDirector() == "Director");
 	CHECK(test.GetRating() == 1);
-	CHECK(test.GetRunTime() == 1);
+	CHECK(test.GetRuntime() == 1);
 
 	CHECK_THROWS(Movie("Title", "Director", -1, 1, 1)); // bad runtime
 	CHECK_THROWS(Movie("Title", "Director", 1, 1, -1)); // bad rating
@@ -37,7 +37,7 @@ TEST_CASE("Test CreateMovies")
 	CHECK(listofmovies[2]->GetDirector() == "Director3");
 	for (int i = 0; i < 3; i++)
 	{
-		CHECK(listofmovies[i]->GetRunTime() == i + 1);
+		CHECK(listofmovies[i]->GetRuntime() == i + 1);
 		CHECK(listofmovies[i]->GetRating() == i + 1);
 	}
 

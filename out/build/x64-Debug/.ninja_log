@@ -14,3 +14,7 @@
 36	673	7611888631962761	CMakeFiles/test.dir/src/movie.cpp.obj	74413cd684bf36b6
 29	3474	7611888659810406	CMakeFiles/test.dir/test/test.cpp.obj	765888b859a6a318
 3474	3860	7611888662913176	test.exe	5225b6bdda2540c0
+17	673	7611892676704423	CMakeFiles/test.dir/src/movie_factory.cpp.obj	292ba90792a13a77
+3	2910	7611892698907589	CMakeFiles/test.dir/test/test.cpp.obj	765888b859a6a318
+27	818	7611892996125540	CMakeFiles/test.dir/src/movie.cpp.obj	74413cd684bf36b6
+819	1234	7611892999598233	test.exe	5225b6bdda2540c0
