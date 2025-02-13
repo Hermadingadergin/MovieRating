@@ -11,10 +11,10 @@ Movie* FindHighestRatedMovie(std::vector<Movie*> movielist)
 	{
 		throw std::invalid_argument{"No movies"};
 	}
-	Movie* highestrated = movielist[0];
+	Movie* highestrated = movielist[0]; // sets initial highest rated movie as the first
 	for (size_t i = 0; i < movielist.size(); i++)
 	{
-		if (highestrated->GetRating() < movielist[i]->GetRating())
+		if (highestrated->GetRating() < movielist[i]->GetRating()) // if the ith movie has a higher rating, set as new highest rated
 		{
 			highestrated = movielist[i];
 		}
@@ -24,16 +24,16 @@ Movie* FindHighestRatedMovie(std::vector<Movie*> movielist)
 
 double CalculateAverageRuntime(std::vector<Movie*> movielist)
 {
-	if (movielist.size() < 1)
+	if (movielist.size() < 1) // must have at least 1 movie
 	{
 		throw std::invalid_argument{ "No movies" };
 	}
 	double sum = 0;
-	for (size_t i = 0; i < movielist.size(); i++)
+	for (size_t i = 0; i < movielist.size(); i++) // sums up all of the movie runtimes
 	{
 		sum += movielist[i]->GetRunTime();
 	}
-	return sum / movielist.size();
+	return sum / movielist.size(); // divides by the length of the movie list, then returns
 }
 
 int main()

@@ -6,15 +6,14 @@
 
 std::vector<Movie*> CreateMovies(std::vector<std::string> titles, std::vector<std::string> directors, std::vector<int> runtime, std::vector<int> ids, std::vector<double> ratings)
 {
-	//size_t argeval = (titles.size() + directors.size() + runtime.size() + ids.size() + ratings.size()) % 5;
-	if (titles.size() == directors.size() && directors.size() == runtime.size() && runtime.size() == ids.size() && ids.size() == ratings.size()) // since there are 5 arguments, a valid list of arguments
+	if (titles.size() == directors.size() && directors.size() == runtime.size() && runtime.size() == ids.size() && ids.size() == ratings.size()) // checks to make sure all arguments have the same length
 	{
 		std::vector<Movie*> movielist;
 
 		for (size_t i = 0; i < titles.size(); i++)
 		{
-			Movie* newmovie = new Movie(titles[i], directors[i], runtime[i], ids[i], ratings[i]);
-			movielist.push_back(newmovie);
+			Movie* newmovie = new Movie(titles[i], directors[i], runtime[i], ids[i], ratings[i]); // creates a pointer to a movie
+			movielist.push_back(newmovie); // pushes the movie to the back of vector movielist
 		}
 		return movielist;
 		
