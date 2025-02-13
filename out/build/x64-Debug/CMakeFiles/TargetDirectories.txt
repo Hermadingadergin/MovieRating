@@ -1,4 +1,0 @@
-C:/Users/capta/2024/ECE3574/ex/MovieRating/out/build/x64-Debug/CMakeFiles/MovieRating.dir
-C:/Users/capta/2024/ECE3574/ex/MovieRating/out/build/x64-Debug/CMakeFiles/test.dir
-C:/Users/capta/2024/ECE3574/ex/MovieRating/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/capta/2024/ECE3574/ex/MovieRating/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
